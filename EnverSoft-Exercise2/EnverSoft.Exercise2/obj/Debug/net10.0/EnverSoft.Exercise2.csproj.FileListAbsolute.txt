@@ -1,0 +1,15 @@
+C:\Users\Dumoluhle\Desktop\EnverSoft\EnverSoft-Exercise2\EnverSoft.Exercise2\bin\Debug\net10.0\Data\Data.csv
+C:\Users\Dumoluhle\Desktop\EnverSoft\EnverSoft-Exercise2\EnverSoft.Exercise2\bin\Debug\net10.0\EnverSoft.Exercise2.exe
+C:\Users\Dumoluhle\Desktop\EnverSoft\EnverSoft-Exercise2\EnverSoft.Exercise2\bin\Debug\net10.0\EnverSoft.Exercise2.deps.json
+C:\Users\Dumoluhle\Desktop\EnverSoft\EnverSoft-Exercise2\EnverSoft.Exercise2\bin\Debug\net10.0\EnverSoft.Exercise2.runtimeconfig.json
+C:\Users\Dumoluhle\Desktop\EnverSoft\EnverSoft-Exercise2\EnverSoft.Exercise2\bin\Debug\net10.0\EnverSoft.Exercise2.dll
+C:\Users\Dumoluhle\Desktop\EnverSoft\EnverSoft-Exercise2\EnverSoft.Exercise2\bin\Debug\net10.0\EnverSoft.Exercise2.pdb
+C:\Users\Dumoluhle\Desktop\EnverSoft\EnverSoft-Exercise2\EnverSoft.Exercise2\obj\Debug\net10.0\EnverSoft.Exercise2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dumoluhle\Desktop\EnverSoft\EnverSoft-Exercise2\EnverSoft.Exercise2\obj\Debug\net10.0\EnverSoft.Exercise2.AssemblyInfoInputs.cache
+C:\Users\Dumoluhle\Desktop\EnverSoft\EnverSoft-Exercise2\EnverSoft.Exercise2\obj\Debug\net10.0\EnverSoft.Exercise2.AssemblyInfo.cs
+C:\Users\Dumoluhle\Desktop\EnverSoft\EnverSoft-Exercise2\EnverSoft.Exercise2\obj\Debug\net10.0\EnverSoft.Exercise2.csproj.CoreCompileInputs.cache
+C:\Users\Dumoluhle\Desktop\EnverSoft\EnverSoft-Exercise2\EnverSoft.Exercise2\obj\Debug\net10.0\EnverSoft.Exercise2.dll
+C:\Users\Dumoluhle\Desktop\EnverSoft\EnverSoft-Exercise2\EnverSoft.Exercise2\obj\Debug\net10.0\refint\EnverSoft.Exercise2.dll
+C:\Users\Dumoluhle\Desktop\EnverSoft\EnverSoft-Exercise2\EnverSoft.Exercise2\obj\Debug\net10.0\EnverSoft.Exercise2.pdb
+C:\Users\Dumoluhle\Desktop\EnverSoft\EnverSoft-Exercise2\EnverSoft.Exercise2\obj\Debug\net10.0\EnverSoft.Exercise2.genruntimeconfig.cache
+C:\Users\Dumoluhle\Desktop\EnverSoft\EnverSoft-Exercise2\EnverSoft.Exercise2\obj\Debug\net10.0\ref\EnverSoft.Exercise2.dll

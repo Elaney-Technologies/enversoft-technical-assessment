@@ -1,0 +1,6 @@
+Submission checklist
+- Upload solution to public GitHub repo
+- Include the SQL creation script in the repo
+- Mention that this is a 3-tier architecture
+- Mention that the supplier data from Supplier DB.xlsx was seeded into SQL Server
+- Include a few screenshots after running locally in Visual Studio

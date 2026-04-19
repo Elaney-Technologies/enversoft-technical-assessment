@@ -1,0 +1,143 @@
+@model SupplierPageViewModel
+@{
+    ViewData["Title"] = "Supplier Portal";
+}
+
+<div class="topbar">
+    <div class="container">
+        <h1>Supplier Portal</h1>
+        <p>Proof of Concept for EnverSoft Mini Project</p>
+    </div>
+</div>
+
+<main class="container main-stack">
+    <section class="card">
+        <h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="16" y1="11" x2="22" y2="11"/></svg>
+            Add Supplier
+        </h2>
+
+        @if (TempData["SuccessMessage"] is string successMessage)
+        {
+            <div class="alert success">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                @successMessage
+            </div>
+        }
+
+        <form asp-action="Create" method="post" autocomplete="off">
+            @if (Model.ActionSource == ActionSource.Create)
+            {
+                <div asp-validation-summary="ModelOnly" class="alert error">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                </div>
+            }
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label asp-for="CreateCompanyName"></label>
+                    <input asp-for="CreateCompanyName" placeholder="e.g. EnverSoft (Pty) Ltd" />
+                    <span asp-validation-for="CreateCompanyName" class="validation"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="CreateTelephoneNo"></label>
+                    <input asp-for="CreateTelephoneNo" placeholder="e.g. 011 123 4567" />
+                    <span asp-validation-for="CreateTelephoneNo" class="validation"></span>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn-primary">Save Supplier</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="card search-card">
+        <h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            Search Suppliers
+        </h2>
+        <form asp-action="Search" method="post" autocomplete="off" class="search-form" id="searchForm">
+            @if (Model.ActionSource == ActionSource.Search)
+            {
+                <div asp-validation-summary="ModelOnly" class="alert error">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                </div>
+            }
+            
+            <input type="hidden" name="page" id="currentPage" value="@Model.SearchResults.PageNumber" />
+
+            <div class="form-group search-input-group">
+                <label asp-for="SearchCompanyName"></label>
+                <div class="input-with-button">
+                    <input asp-for="SearchCompanyName" placeholder="Enter company name to find..." />
+                    <button type="submit" class="btn-search" onclick="document.getElementById('currentPage').value=1;">Search Database</button>
+                </div>
+                <span asp-validation-for="SearchCompanyName" class="validation"></span>
+            </div>
+        </form>
+
+        @if (Model.SearchResults.Items.Any())
+        {
+            <div class="result-section">
+                <div class="result-header">
+                    <h3>Search Results (@Model.SearchResults.TotalCount)</h3>
+                    <div class="pagination-summary">
+                        Showing @(((Model.SearchResults.PageNumber - 1) * Model.SearchResults.PageSize) + 1) to @Math.Min(Model.SearchResults.PageNumber * Model.SearchResults.PageSize, Model.SearchResults.TotalCount)
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Code</th>
+                                <th>Company Name</th>
+                                <th>Telephone</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var supplier in Model.SearchResults.Items)
+                            {
+                                <tr>
+                                    <td class="code-cell">#@supplier.Code.ToString("D4")</td>
+                                    <td class="name-cell">@supplier.CompanyName</td>
+                                    <td class="phone-cell">@supplier.TelephoneNo</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+
+                @if (Model.SearchResults.TotalPages > 1)
+                {
+                    <div class="pagination-footer">
+                        <button class="btn-pager @(!Model.SearchResults.HasPreviousPage ? "disabled" : "")" 
+                                onclick="submitPage(@(Model.SearchResults.PageNumber - 1))" 
+                                @(!Model.SearchResults.HasPreviousPage ? "disabled" : "")>
+                            &laquo; Previous
+                        </button>
+                        
+                        <div class="page-info">
+                            Page <strong>@Model.SearchResults.PageNumber</strong> of @Model.SearchResults.TotalPages
+                        </div>
+
+                        <button class="btn-pager @(!Model.SearchResults.HasNextPage ? "disabled" : "")" 
+                                onclick="submitPage(@(Model.SearchResults.PageNumber + 1))" 
+                                @(!Model.SearchResults.HasNextPage ? "disabled" : "")>
+                            Next &raquo;
+                        </button>
+                    </div>
+                }
+            </div>
+        }
+    </section>
+</main>
+
+<script>
+    function submitPage(pageNumber) {
+        document.getElementById('currentPage').value = pageNumber;
+        document.getElementById('searchForm').submit();
+    }
+</script>

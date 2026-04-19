@@ -1,0 +1,28 @@
+C:\Users\Dumoluhle\Desktop\EverSoft\bin\Debug\net10.0\EverSoft.exe
+C:\Users\Dumoluhle\Desktop\EverSoft\bin\Debug\net10.0\EverSoft.deps.json
+C:\Users\Dumoluhle\Desktop\EverSoft\bin\Debug\net10.0\EverSoft.runtimeconfig.json
+C:\Users\Dumoluhle\Desktop\EverSoft\bin\Debug\net10.0\EverSoft.dll
+C:\Users\Dumoluhle\Desktop\EverSoft\bin\Debug\net10.0\EverSoft.pdb
+C:\Users\Dumoluhle\Desktop\EverSoft\obj\Debug\net10.0\EverSoft.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dumoluhle\Desktop\EverSoft\obj\Debug\net10.0\EverSoft.AssemblyInfoInputs.cache
+C:\Users\Dumoluhle\Desktop\EverSoft\obj\Debug\net10.0\EverSoft.AssemblyInfo.cs
+C:\Users\Dumoluhle\Desktop\EverSoft\obj\Debug\net10.0\EverSoft.csproj.CoreCompileInputs.cache
+C:\Users\Dumoluhle\Desktop\EverSoft\obj\Debug\net10.0\EverSoft.dll
+C:\Users\Dumoluhle\Desktop\EverSoft\obj\Debug\net10.0\refint\EverSoft.dll
+C:\Users\Dumoluhle\Desktop\EverSoft\obj\Debug\net10.0\EverSoft.pdb
+C:\Users\Dumoluhle\Desktop\EverSoft\obj\Debug\net10.0\EverSoft.genruntimeconfig.cache
+C:\Users\Dumoluhle\Desktop\EverSoft\obj\Debug\net10.0\ref\EverSoft.dll
+C:\Users\Dumoluhle\Desktop\EverSoft\Exercise 1\bin\Debug\net10.0\EverSoft.exe
+C:\Users\Dumoluhle\Desktop\EverSoft\Exercise 1\bin\Debug\net10.0\EverSoft.deps.json
+C:\Users\Dumoluhle\Desktop\EverSoft\Exercise 1\bin\Debug\net10.0\EverSoft.runtimeconfig.json
+C:\Users\Dumoluhle\Desktop\EverSoft\Exercise 1\bin\Debug\net10.0\EverSoft.dll
+C:\Users\Dumoluhle\Desktop\EverSoft\Exercise 1\bin\Debug\net10.0\EverSoft.pdb
+C:\Users\Dumoluhle\Desktop\EverSoft\Exercise 1\obj\Debug\net10.0\EverSoft.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dumoluhle\Desktop\EverSoft\Exercise 1\obj\Debug\net10.0\EverSoft.AssemblyInfoInputs.cache
+C:\Users\Dumoluhle\Desktop\EverSoft\Exercise 1\obj\Debug\net10.0\EverSoft.AssemblyInfo.cs
+C:\Users\Dumoluhle\Desktop\EverSoft\Exercise 1\obj\Debug\net10.0\EverSoft.csproj.CoreCompileInputs.cache
+C:\Users\Dumoluhle\Desktop\EverSoft\Exercise 1\obj\Debug\net10.0\EverSoft.dll
+C:\Users\Dumoluhle\Desktop\EverSoft\Exercise 1\obj\Debug\net10.0\refint\EverSoft.dll
+C:\Users\Dumoluhle\Desktop\EverSoft\Exercise 1\obj\Debug\net10.0\EverSoft.pdb
+C:\Users\Dumoluhle\Desktop\EverSoft\Exercise 1\obj\Debug\net10.0\EverSoft.genruntimeconfig.cache
+C:\Users\Dumoluhle\Desktop\EverSoft\Exercise 1\obj\Debug\net10.0\ref\EverSoft.dll
