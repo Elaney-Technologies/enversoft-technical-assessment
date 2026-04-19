@@ -29,5 +29,6 @@ This repository contains my solutions for the EnverSoft technical assessment. I 
 ## ✉️ Candidate Details
 - **Name:** Dumoluhle Rooney Moyo
 - **Email:** dumoluhlemoyodumoluhlemo@gmail.com
+- **Contact Number:** 0730854439
 
 Thanks again for taking the time to review my work.
